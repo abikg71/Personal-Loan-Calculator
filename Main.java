@@ -29,7 +29,7 @@ public class Main {
         double monthlyPayment = calculateMonthlyPayment(loan, term, rate, downPay);
         double totalInterestAccrued = calculateInterestAccrued(monthlyPayment, loan, downPay, term);
         
-        System.out.println("Monthly Payment: ");
+        System.out.println("Monthly Payments: ");
         System.out.print("$");
         System.out.printf("%.2f", monthlyPayment);
         System.out.println();
