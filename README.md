@@ -1,5 +1,5 @@
 # Personal-Loan-Calculator
-The program calculates monthly payment on the loan. It prints our montly payment and total interest payment for the duration of loan rounded to its nearest integer. 
+The program calculates monthly payment on the loan. It prints our monthly payment and total interest payment for the duration of loan rounded to its nearest integer. 
 The program assumes that all inputs are valid. 
 
 Example Input: 
