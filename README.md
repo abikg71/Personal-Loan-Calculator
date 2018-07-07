@@ -1,25 +1,28 @@
-# Personal-Loan-Calculator
-The program calculates monthly payment on the loan. It prints our monthly payment and total interest payment for the duration of loan rounded to its nearest integer. 
-The program assumes that all inputs are valid. 
+# Personal Loan Calculator
+The program calculates monthly payments on a loan. It prints out monthly payments and total interest on a loan for the duration of a loan's term. User needs to provide loan amount, term and interest rate. 
 
-Example Input: 
+## Getting Started
 
-Loan amount: 
-30000
+## Formula
+<img src="Loan Payment Formula.gif" width="150" align="left">
 
-Loan term in years: 
-10
+```
+    public static double calculateMonthlyPayment(double loan, int term, double rate, double downPay )
+    {
+        double monthlyRate = (rate/100.0) / 12;
+        int termsInMonths = term * 12;
+        loan -= downPay;
+        double monthlyPayment = (monthlyRate * loan)/(1-Math.pow((1+monthlyRate), -termsInMonths));
+        return monthlyPayment;
+    }
+```
 
-Interest rate per year: 
-6
-
-Downpayment: 
-5000
-
-Example Output:
-
-Monthly Payment: 
-$277.55
-
-Total Accrued Interest: 
-$8306
+## Usage
+To compile the file:
+```diff
+javac LoanCalc.java
+```
+To run the file:
+```diff
+java LoanCalc
+```
